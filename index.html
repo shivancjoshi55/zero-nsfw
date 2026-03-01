@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero NSFW | Block Unwanted Content Instantly</title>
+    <meta name="description"
+        content="Zero NSFW is a powerful browser extension that detects and blocks NSFW content in real-time using AI. Browse safely, anywhere.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===================== HEADER / NAVBAR ===================== -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="#" class="logo" id="logo">
+                <svg class="logo-icon" viewBox="0 0 32 32" width="28" height="28" fill="none">
+                    <circle cx="16" cy="16" r="14" stroke="#e8602e" stroke-width="2" />
+                    <line x1="10" y1="10" x2="22" y2="22" stroke="#e8602e" stroke-width="2.5" stroke-linecap="round" />
+                    <line x1="22" y1="10" x2="10" y2="22" stroke="#e8602e" stroke-width="2.5" stroke-linecap="round" />
+                </svg>
+                <span class="logo-text">Zero<br><small>NSFW</small></span>
+            </a>
+
+            <nav class="pill-nav" id="pill-nav">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </nav>
+
+            <a href="#" class="btn-signin" id="btn-signin">Get Extension</a>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+        <nav class="mobile-nav">
+            <a href="#hero" class="mobile-nav-link">Home</a>
+            <a href="#features" class="mobile-nav-link">Features</a>
+            <a href="#pricing" class="mobile-nav-link">Pricing</a>
+            <a href="#faq" class="mobile-nav-link">FAQ</a>
+            <a href="#" class="btn-signin mobile-signin">Get Extension</a>
+        </nav>
+    </div>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section id="hero" class="hero">
+        <!-- Geometric grid background -->
+        <div class="hero-grid-bg"></div>
+        <div class="hero-flare hero-flare--blue"></div>
+        <div class="hero-flare hero-flare--orange"></div>
+
+        <div class="hero-content">
+            <p class="hero-tagline">DETECT. &nbsp;BLOCK. &nbsp;BROWSE SAFE.</p>
+            <h1 class="hero-headline">
+                Block All NSFW<br>
+                Content Before It<br>
+                <span class="hero-highlight">Reaches</span> Your<br>
+                Screen!
+            </h1>
+            <p class="hero-subtext">
+                Zero NSFW is an AI-powered browser extension that instantly detects and blocks explicit content in
+                real-time — so you can browse worry-free.
+            </p>
+            <div class="hero-social-proof">
+                <div class="avatar-group">
+                    <div class="avatar" style="background: #e8602e;">J</div>
+                    <div class="avatar" style="background: #3a7bd5;">K</div>
+                    <div class="avatar" style="background: #00b894;">S</div>
+                    <div class="avatar" style="background: #fdcb6e;">M</div>
+                </div>
+                <p class="avatar-label"><span class="orange">500,000+</span> users browsing safely every day</p>
+            </div>
+            <a href="#pricing" class="btn-cta" id="btn-start-journey">Install Free →</a>
+        </div>
+    </section>
+
+    <!-- ===================== BENTO STATS GRID ===================== -->
+    <section id="bento" class="bento">
+        <div class="bento-grid">
+            <!-- Card 1: Users -->
+            <div class="bento-card bento-card--yt">
+                <div class="bento-icon">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="#e8602e">
+                        <path
+                            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                    </svg>
+                </div>
+                <h3 class="bento-number">500k+</h3>
+                <p class="bento-label">Active Users</p>
+                <p class="bento-desc">Trusted by half a million users worldwide for safe browsing.</p>
+            </div>
+
+            <!-- Card 2: Images Blocked -->
+            <div class="bento-card bento-card--learners">
+                <div class="bento-icon">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#ffc107">
+                        <path d="M12 2L4.5 20.3l.7.7L12 18l6.8 3 .7-.7z" />
+                    </svg>
+                </div>
+                <h3 class="bento-number">50<br>Million</h3>
+                <p class="bento-label">Images Blocked</p>
+                <p class="bento-desc">Over 50 million explicit images detected and blocked automatically.</p>
+            </div>
+
+            <!-- Card 3: Shield Image -->
+            <div class="bento-card bento-card--start">
+                <img src="assets/hero-instructor.png" alt="Safe Browsing with Zero NSFW" class="bento-img"
+                    loading="lazy">
+                <div class="bento-card-overlay">
+                    <h3>Browse<br>Safely</h3>
+                    <a href="#pricing" class="btn-sm">Get Protected →</a>
+                </div>
+            </div>
+
+            <!-- Card 4: Mission -->
+            <div class="bento-card bento-card--job">
+                <h3 class="bento-job-title">
+                    PROTECT 🛡️🔒🚫<br>
+                    YOUR <span class="arrow-line">⟶</span><br>
+                    SCREEN FROM<br>
+                    UNWANTED<br>
+                    CONTENT!
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== COMPATIBLE BROWSERS MARQUEE ===================== -->
+    <section id="marquee" class="marquee-section">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                <span class="company-logo">Chrome</span>
+                <span class="company-logo">Firefox</span>
+                <span class="company-logo">Edge</span>
+                <span class="company-logo">Safari</span>
+                <span class="company-logo">Brave</span>
+                <span class="company-logo">Opera</span>
+                <span class="company-logo">Vivaldi</span>
+                <span class="company-logo">Arc</span>
+            </div>
+            <div class="marquee-content" aria-hidden="true">
+                <span class="company-logo">Chrome</span>
+                <span class="company-logo">Firefox</span>
+                <span class="company-logo">Edge</span>
+                <span class="company-logo">Safari</span>
+                <span class="company-logo">Brave</span>
+                <span class="company-logo">Opera</span>
+                <span class="company-logo">Vivaldi</span>
+                <span class="company-logo">Arc</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FEATURES SECTION (was IMPACT) ===================== -->
+    <section id="features" class="impact">
+        <span class="section-badge">FEATURES</span>
+        <h2 class="section-title">Why Zero NSFW Is <span class="orange">Better</span> Than<br>Any Other Blocker</h2>
+
+        <div class="impact-cards">
+            <div class="impact-card">
+                <div class="impact-card-icon">🤖</div>
+                <h4>AI-Powered Detection</h4>
+                <p>Our deep learning model scans images and videos in real-time with 99.2% accuracy — no manual
+                    blacklists needed.</p>
+            </div>
+            <div class="impact-card">
+                <div class="impact-card-icon">⚡</div>
+                <h4>Instant Blocking</h4>
+                <p>NSFW content is blurred or removed before it even renders on screen. Zero lag, zero exposure — just
+                    clean browsing.</p>
+            </div>
+            <div class="impact-card">
+                <div class="impact-card-icon">🔒</div>
+                <h4>100% Private</h4>
+                <p>All processing happens locally on your device. No images are ever uploaded or stored on any server.
+                    Your data stays yours.</p>
+            </div>
+            <div class="impact-card">
+                <div class="impact-card-icon">🌐</div>
+                <h4>Works Everywhere</h4>
+                <p>Compatible with every website — social media, search engines, forums, news sites. If it's in your
+                    browser, we've got it covered.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PRICING SECTION (was COURSES) ===================== -->
+    <section id="pricing" class="courses">
+        <span class="section-badge section-badge--dark">PRICING</span>
+        <h2 class="section-title section-title--dark">
+            Choose The <span class="orange">Plan That Fits</span><br>
+            Your Browsing Needs.
+        </h2>
+        <a href="#" class="btn-cta btn-cta--outline" id="btn-explore-courses">Compare Plans →</a>
+
+        <div class="course-cards">
+            <!-- Plan 1: Free -->
+            <div class="course-card" id="course-data-science">
+                <div class="course-card-img">
+                    <img src="assets/data-science.png" alt="Zero NSFW Free Plan" loading="lazy">
+                </div>
+                <div class="course-card-body">
+                    <h3>Free Plan — Essential Protection</h3>
+                    <p class="course-desc">Get started with core NSFW blocking on all websites. Perfect for personal use
+                        with standard detection accuracy.</p>
+                    <div class="course-meta">
+                        <div class="meta-item">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="#e8602e">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 6v6l4 2" stroke="#fff" stroke-width="2" fill="none" />
+                            </svg>
+                            <div><strong>Unlimited</strong><br><small>Browsing</small></div>
+                        </div>
+                        <div class="meta-item">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="#e8602e">
+                                <path d="M9 12l2 2 4-4m5 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <div><strong>95%</strong><br><small>Accuracy</small></div>
+                        </div>
+                        <div class="meta-item">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="#e8602e">
+                                <path
+                                    d="M12 14c-3.87 0-7 1.57-7 3.5V20h14v-2.5c0-1.93-3.13-3.5-7-3.5zM12 12a4 4 0 100-8 4 4 0 000 8z" />
+                            </svg>
+                            <div><strong>Email</strong><br><small>Support</small></div>
+                        </div>
+                    </div>
+                    <div class="course-price">
+                        <span>Price</span>
+                        <span class="price-amount">Free</span>
+                        <span class="price-old">Forever</span>
+                    </div>
+                    <a href="#" class="btn-course">Install Now →</a>
+                </div>
+            </div>
+
+            <!-- Plan 2: Pro -->
+            <div class="course-card course-card--featured" id="course-web-dev">
+                <div class="course-card-body">
+                    <h3>Pro Plan — Maximum Shield with AI Ultra Detection + Family Mode</h3>
+                    <div class="course-meta">
+                        <div class="meta-item">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="#e8602e">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 6v6l4 2" stroke="#fff" stroke-width="2" fill="none" />
+                            </svg>
+                            <div><strong>Unlimited</strong><br><small>All Devices</small></div>
+                        </div>
+                        <div class="meta-item">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="#e8602e">
+                                <path d="M9 12l2 2 4-4m5 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <div><strong>99.2%</strong><br><small>AI Accuracy</small></div>
+                        </div>
+                        <div class="meta-item">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="#e8602e">
+                                <path
+                                    d="M12 14c-3.87 0-7 1.57-7 3.5V20h14v-2.5c0-1.93-3.13-3.5-7-3.5zM12 12a4 4 0 100-8 4 4 0 000 8z" />
+                            </svg>
+                            <div><strong>24/7</strong><br><small>Priority Support</small></div>
+                        </div>
+                    </div>
+                    <div class="course-price">
+                        <span>Price</span>
+                        <span class="price-amount">$4.99/mo</span>
+                        <span class="price-old">$9.99/mo</span>
+                    </div>
+                    <a href="#" class="btn-course">Upgrade to Pro →</a>
+                </div>
+                <div class="course-card-img">
+                    <img src="assets/web-dev.png" alt="Zero NSFW Pro Plan" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS SECTION ===================== -->
+    <section id="testimonials" class="testimonials">
+        <span class="section-badge">TESTIMONIALS</span>
+        <h2 class="section-title">What Our <span class="orange">Users</span> Say</h2>
+
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"I installed Zero NSFW for my family PC and it's been a lifesaver. My kids
+                    can browse freely without me worrying about what they might stumble upon. The AI detection is
+                    incredibly accurate."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar" style="background:#e8602e;">R</div>
+                    <div>
+                        <strong>Rajesh Kumar</strong>
+                        <small>Parent & IT Professional</small>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"As a content moderator, I deal with NSFW content daily. Zero NSFW helps me
+                    filter what I see during personal browsing. The fact that everything runs locally gives me peace of
+                    mind about privacy."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar" style="background:#3a7bd5;">P</div>
+                    <div>
+                        <strong>Priya Mehta</strong>
+                        <small>Content Safety Analyst</small>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"I use this on my work laptop to be safe in shared spaces. It's fast,
+                    lightweight, and doesn't slow down my browser at all. The blur-before-render feature is genius — I
+                    never see a thing."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar" style="background:#00b894;">A</div>
+                    <div>
+                        <strong>Alex Thompson</strong>
+                        <small>Software Engineer</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== STATS SECTION (was PLACEMENTS) ===================== -->
+    <section id="stats" class="placements">
+        <span class="section-badge">BY THE NUMBERS</span>
+        <h2 class="section-title">The Impact of <span class="orange">Zero NSFW</span></h2>
+
+        <div class="placement-grid">
+            <div class="placement-card">
+                <div class="placement-avatar" style="background:#e8602e;">🛡️</div>
+                <h4>99.2%</h4>
+                <p>Detection Accuracy</p>
+                <span class="placement-company">AI-Powered</span>
+            </div>
+            <div class="placement-card">
+                <div class="placement-avatar" style="background:#3a7bd5;">⚡</div>
+                <h4>&lt;50ms</h4>
+                <p>Average Response Time</p>
+                <span class="placement-company">Real-Time</span>
+            </div>
+            <div class="placement-card">
+                <div class="placement-avatar" style="background:#00b894;">🌍</div>
+                <h4>190+</h4>
+                <p>Countries Reached</p>
+                <span class="placement-company">Global</span>
+            </div>
+            <div class="placement-card">
+                <div class="placement-avatar" style="background:#fdcb6e;">🔒</div>
+                <h4>0</h4>
+                <p>Data Sent to Servers</p>
+                <span class="placement-company">Private</span>
+            </div>
+            <div class="placement-card">
+                <div class="placement-avatar" style="background:#a29bfe;">📱</div>
+                <h4>8+</h4>
+                <p>Browsers Supported</p>
+                <span class="placement-company">Cross-Platform</span>
+            </div>
+            <div class="placement-card">
+                <div class="placement-avatar" style="background:#fd79a8;">⭐</div>
+                <h4>4.9/5</h4>
+                <p>Chrome Store Rating</p>
+                <span class="placement-company">Top Rated</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FAQ SECTION ===================== -->
+    <section id="faq" class="faq">
+        <span class="section-badge">FAQ</span>
+        <h2 class="section-title">Frequently Asked <span class="orange">Questions</span></h2>
+
+        <div class="faq-list">
+            <div class="faq-item" id="faq-1">
+                <button class="faq-question" aria-expanded="false">
+                    <span>How does Zero NSFW detect explicit content?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Zero NSFW uses a deep learning AI model trained on millions of labeled images. It analyzes every
+                        image and video frame loaded in your browser in real-time, classifying content as safe or
+                        explicit with 99.2% accuracy — all without sending any data off your device.</p>
+                </div>
+            </div>
+            <div class="faq-item" id="faq-2">
+                <button class="faq-question" aria-expanded="false">
+                    <span>Does it slow down my browser?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Not at all. Zero NSFW is optimized with WebAssembly and runs efficiently in the background. The
+                        average detection time is under 50 milliseconds per image — faster than most images take to
+                        fully render on screen.</p>
+                </div>
+            </div>
+            <div class="faq-item" id="faq-3">
+                <button class="faq-question" aria-expanded="false">
+                    <span>Is my browsing data private?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Absolutely. All image analysis happens 100% locally on your device. No images, URLs, or browsing
+                        data are ever uploaded to any server. We don't collect, store, or transmit any user data
+                        whatsoever.</p>
+                </div>
+            </div>
+            <div class="faq-item" id="faq-4">
+                <button class="faq-question" aria-expanded="false">
+                    <span>Which browsers are supported?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Zero NSFW supports all Chromium-based browsers (Chrome, Edge, Brave, Opera, Vivaldi, Arc),
+                        Firefox, and Safari. Install it once and it works across all your browsing sessions.</p>
+                </div>
+            </div>
+            <div class="faq-item" id="faq-5">
+                <button class="faq-question" aria-expanded="false">
+                    <span>Can I whitelist specific websites?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes! The Pro plan includes a full whitelist and blacklist manager. You can exclude specific
+                        trusted sites from scanning, or create a strict-mode list where only approved sites are
+                        accessible — perfect for parental controls.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer id="footer" class="footer">
+        <div class="footer-bg-text">ZERO NSFW</div>
+
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>About</h4>
+                <p class="footer-about">Zero NSFW is a privacy-first browser extension that uses on-device AI to detect
+                    and block explicit content in real-time — keeping your screen clean and your data private.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path
+                                d="M12 2.16c3.2 0 3.584.012 4.85.07 1.17.054 1.97.24 2.43.403a4.08 4.08 0 011.52.988c.462.462.75.904.988 1.52.163.46.35 1.26.404 2.43.058 1.266.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.404 2.43a4.08 4.08 0 01-.988 1.52 4.08 4.08 0 01-1.52.988c-.46.163-1.26.35-2.43.404-1.266.058-1.65.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.43-.404a4.08 4.08 0 01-1.52-.988 4.08 4.08 0 01-.988-1.52c-.163-.46-.35-1.26-.404-2.43C2.172 15.584 2.16 15.2 2.16 12s.012-3.584.07-4.85c.054-1.17.24-1.97.404-2.43a4.08 4.08 0 01.988-1.52A4.08 4.08 0 015.14 2.21c.46-.163 1.26-.35 2.43-.404C8.836 1.748 9.22 1.736 12 1.736zM12 0C8.74 0 8.332.014 7.052.072 5.775.13 4.903.333 4.14.63a5.88 5.88 0 00-2.126 1.384A5.88 5.88 0 00.63 4.14C.333 4.903.13 5.775.072 7.052.014 8.332 0 8.74 0 12s.014 3.668.072 4.948c.058 1.277.261 2.149.558 2.912a5.88 5.88 0 001.384 2.126 5.88 5.88 0 002.126 1.384c.763.297 1.635.5 2.912.558C8.332 23.986 8.74 24 12 24s3.668-.014 4.948-.072c1.277-.058 2.149-.261 2.912-.558a5.88 5.88 0 002.126-1.384 5.88 5.88 0 001.384-2.126c.297-.763.5-1.635.558-2.912C23.986 15.668 24 15.26 24 12s-.014-3.668-.072-4.948c-.058-1.277-.261-2.149-.558-2.912a5.88 5.88 0 00-1.384-2.126A5.88 5.88 0 0019.86.63c-.763-.297-1.635-.5-2.912-.558C15.668.014 15.26 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path
+                                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="X (Twitter)">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Product</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Changelog</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li>📧 support@zerosfw.com</li>
+                    <li><a href="#">Report a Bug</a></li>
+                    <li><a href="#">Feature Request</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2024 Zero NSFW. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
